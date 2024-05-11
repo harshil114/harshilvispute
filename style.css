@@ -217,6 +217,12 @@
     margin-top: 5rem;
     max-width: 35vw;
 }
+@media only screen and (max-width:925px){
+    .aboutme-content-skills{
+        max-width: unset;
+        margin: 0 1rem;
+    }
+}
 .aboutme-content-skills h3{
     font-size: 1.8rem;
 }
