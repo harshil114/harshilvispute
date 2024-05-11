@@ -67,18 +67,35 @@
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url("assets/common-bg.svg");
         
 }
+@media only screen and (max-width:790px) {
+    .home-container{
+        margin-top: 0;      
+    }   
+}
 .home-heading-text{
     text-transform: uppercase;
     font-size: 4rem;
     letter-spacing: 2px;
 }
+@media only screen and (max-width:990px) {    
+    .home-heading-text{
+        font-size: 3rem;
+        text-align: center;        
+    }    
+}
 .home-para{
     margin-top: 2.4rem;
     font-size: 1.4rem;
-    max-width: 52vw;
+    max-width: 54vw;
     text-align: center;
     line-height: 1.6;
     color: var(--light-grey);
+}
+@media only screen and (max-width:1270px){
+    .home-para{
+        max-width: 64vw;
+        font-size: 1rem;
+    }
 }
 .home-button{
     margin-top: 3rem;
