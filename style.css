@@ -127,6 +127,7 @@
     .home-para{
         max-width: 64vw;
         font-size: 1rem;
+        text-align: justify;
     }
 }
 .home-button{
@@ -166,18 +167,42 @@
     line-height: 1.6;
     color: var(--light-grey);
 }
+@media only screen and (max-width:1270px) {
+    .aboutme-heading-para{
+        max-width: 64vw;
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
 .aboutme-content-main{
     background-color: var(--light-white);
     display: flex;
     justify-content: space-around;    
-}   
-
+}  
+@media only screen and (max-width:925px){
+    .aboutme-content-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
 .aboutme-content-left{
     width: 38%;
+}
+@media only screen and (max-width:925px){
+    .aboutme-content-left{
+        width: unset;
+        margin: 0 1rem;        
+    }
 }
 .aboutme-content-title{
     margin-top: 5rem;
     font-size: 1.8rem;
+}
+@media only screen and (max-width:925px) {
+    .aboutme-content-title{
+        font-size: 1.4rem;
+    }
 }
 .aboutme-content-details{
     margin-top: 2rem;
