@@ -16,15 +16,15 @@
 .navigation-main{
     display: flex;
     justify-content: space-between;    
-    background-color: white;
-    padding: 25px;
+    background-color: white;    
+    height: 14vh;    
     position: sticky;
-    top:0px ;
+    top:0 ;    
 }
 .navigation-main span{
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 1rem;
 }
 .navigation-head-text a{
     text-decoration: none;
@@ -34,15 +34,18 @@
     font-size: 20px;
     font-weight: 650;   
 }
+.navigation-content{
+    display: flex;
+    justify-content: center;
+}
 .navigation-main-links{
-    /* background-color: red; */
+    
     list-style: none;
     display: flex;
     align-items: center;    
 }
 .link{
-    margin-right: 45px;
-    font-size: 16px;
+    margin-right: 4.3rem;   
     font-weight: 650;   
     display: flex;
     align-items: center;
@@ -52,10 +55,6 @@
     color: var(--light-grey);
     text-transform: uppercase;
 }
-
-.home-header{
+.home-container{
     margin-top: 100px;
-    
 }
-
-
