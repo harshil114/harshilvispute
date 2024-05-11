@@ -143,3 +143,26 @@
     letter-spacing: 1px;
     font-weight:650;
 }
+#aboutme{
+    background-color: var(--light-white);
+}
+.aboutme-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7rem;
+}
+.aboutme-heading-text{
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.aboutme-heading-para{
+    margin-top: 2.4rem;
+    max-width: 61vw;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--light-grey);
+}
+
