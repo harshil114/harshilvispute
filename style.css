@@ -23,6 +23,12 @@
     position: sticky;
     top:0 ;    
 }
+@media only screen and (max-width:765px){
+    .navigation-main{
+        height: 7vh;
+    }    
+}
+
 .navigation-main span{
     display: flex;
     align-items: center;
@@ -46,6 +52,11 @@
     display: flex;
     align-items: center;    
 }
+@media only screen and (max-width:765px){
+    .navigation-main-links{
+        display: none;
+    }    
+}
 .link{
     margin-right: 4.3rem;   
     font-weight: 650;   
@@ -56,6 +67,25 @@
     text-decoration: none;
     color: var(--light-grey);
     text-transform: uppercase;
+}
+.ham-menu-container{
+    display: none;
+    width: 2rem;
+    padding: 1.3rem 1rem;
+}
+@media only screen and (max-width:765px) {
+    .ham-menu-container{
+        display: block;
+    }   
+}
+.ham-menu{
+    width: 100%;
+}
+.ham-menu-close{
+    width: 100%;
+}
+.dis-none{
+    display: none;
 }
 .home-container{
     margin-top: 5rem;
