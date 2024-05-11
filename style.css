@@ -3,6 +3,7 @@
     --nav-bg-color:white; 
     --button-bg-color: #7843E9;
     --light-white: #fafafa;
+    --aboutme-details-para: #666;
 }
 *{
     margin: 0;
@@ -164,5 +165,52 @@
     font-size: 1.3rem;
     line-height: 1.6;
     color: var(--light-grey);
+}
+.aboutme-content-main{
+    background-color: var(--light-white);
+    display: flex;
+    justify-content: space-around;    
+}   
+
+.aboutme-content-left{
+    width: 38%;
+}
+.aboutme-content-title{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+}
+.aboutme-content-details{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+.aboutme-content-details-para{
+    margin-bottom: 1rem;
+    color: var(--aboutme-details-para);
+    line-height: 1.6;
+}
+.aboutme-content-skills{
+    margin-top: 5rem;
+    max-width: 35vw;
+}
+.aboutme-content-skills h3{
+    font-size: 1.8rem;
+}
+.skills{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+.skills-skill{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1.3rem;
+    border: 2px;
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.2);
+    color: var(--aboutme-details-para);
+    font-weight: 600;
+    font-size: 1rem;
+
 }
 
