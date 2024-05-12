@@ -244,4 +244,94 @@
     font-size: 1rem;
 
 }
-
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding-top: 7rem;
+    /* margin-bottom: 2rem ; */
+}
+.project-container h3{
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.project-container-para{
+    margin: 2.4rem 0 4.4rem 0;
+    max-width: 56vw;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--light-grey);
+}
+@media only screen and (max-width:1270px) {
+    .project-container-para{
+        max-width: 64vw;
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+.project-row{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;   
+    margin-bottom: 11rem;
+}
+@media only screen and (max-width: 1000px){
+    .project-row{
+    grid-template-columns: 1fr;   
+    }
+}
+.project-row-img{
+    width: 90%;
+    display: block;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1000px){
+    .project-row-img{
+        margin: auto; 
+    }
+}
+.project-row-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+@media only screen and (max-width: 1000px){
+    .project-row-content{
+        margin: 0 1rem; 
+        align-items: center;
+    }
+}
+.project-row-content-title{
+    font-size: 1.7rem;
+    margin-bottom: 1.8rem;
+}
+.project-row-content p{
+    color: var(--aboutme-details-para);
+    font-size: 1.2rem;
+    max-width: 38rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+.project-row-button-container{
+    display: inline;
+    margin-top: 1.8rem;
+    /* box-shadow: 0 1px 5px 10px rgba(0, 0, 0, 0.15); */
+}
+.project-row-content-button{
+    margin-right: 2rem;
+    background-color: var(--button-bg-color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+}
+.button-shadow1{
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.button-shadow2{
+    box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
