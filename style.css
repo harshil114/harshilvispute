@@ -125,9 +125,9 @@
 }
 @media only screen and (max-width:1270px){
     .home-para{
-        max-width: 64vw;
+        max-width: 80vw;
         font-size: 1rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 .home-button{
@@ -169,9 +169,9 @@
 }
 @media only screen and (max-width:1270px) {
     .aboutme-heading-para{
-        max-width: 64vw;
+        max-width: 80vw;
         font-size: 1rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 .aboutme-content-main{
@@ -266,15 +266,15 @@
 }
 @media only screen and (max-width:1270px) {
     .project-container-para{
-        max-width: 64vw;
+        max-width: 80vw;
         font-size: 1rem;
-        text-align: justify;
+        text-align: center;
     }
 }
 .project-row{
     display: grid;
     grid-template-columns: 1.1fr 1fr;   
-    margin-bottom: 11rem;
+    margin-bottom: 5rem;
 }
 @media only screen and (max-width: 1000px){
     .project-row{
@@ -311,23 +311,33 @@
 .project-row-content p{
     color: var(--aboutme-details-para);
     font-size: 1.2rem;
-    max-width: 38rem;
+    max-width: 80vw;
     line-height: 1.6;
     margin-bottom: 1.6rem;
 }
-.project-row-button-container{
-    display: inline;
-    margin-top: 1.8rem;
-    /* box-shadow: 0 1px 5px 10px rgba(0, 0, 0, 0.15); */
+.project-row-button-container{    
+    margin-top: 0.5rem;  
+    margin-left: 1rem; 
+}
+@media only screen and (max-width:425px) {
+    .project-row-button-container{
+        display: flex;        
+    }    
 }
 .project-row-content-button{
-    margin-right: 2rem;
+    margin-right: 1rem;
     background-color: var(--button-bg-color);
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.7rem 2rem;
     border-radius: 5px;
+}
+@media only screen and (max-width:425px) {
+    .project-row-content-button{      
+      /* margin-right:0.8rem ; */
+      padding: 1rem 1.5rem;
+    }    
 }
 .button-shadow1{
     box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15);
