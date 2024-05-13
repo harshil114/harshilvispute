@@ -4,11 +4,15 @@
     --button-bg-color: #7843E9;
     --light-white: #fafafa;
     --aboutme-details-para: #666;
+    --black: #000000;
 }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro';
+}
+html{
+    scroll-behavior: smooth;
 }
 .navigation-container{
     position:fixed;
@@ -48,6 +52,7 @@
 .navigation-content{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .navigation-main-links{
     
@@ -74,7 +79,7 @@
 .ham-menu-container{
     display: none;
     width: 2rem;
-    padding: 1.3rem 1rem;
+    padding: 0 1rem;
 }
 @media only screen and (max-width:765px) {
     .ham-menu-container{
@@ -102,7 +107,8 @@
 }
 @media only screen and (max-width:790px) {
     .home-container{
-        margin-top: 0;      
+        margin-top: 0;     
+        height: 75vh;  
     }   
 }
 .home-heading-text{
@@ -346,4 +352,72 @@
 }
 .button-shadow2{
     box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+#footer{
+    background-color: var(--black);
+    color: white;    
+}
+.footer-container{
+    max-width: 120rem;
+    margin: auto;
+    width: 92%;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-around;  
+    padding:4rem 0; 
+    gap: 20rem;
+}
+@media only screen and (max-width:785px) {
+    .footer-top{
+        display: block;
+    }    
+}
+.main-footer-row1{
+    order: 1    ;
+}
+.main-footer-row1 h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.footer-social-links a{
+    text-decoration: none;
+    margin-right:0.7rem ;    
+}
+.footer-lower{
+    width: 40%;
+}
+@media only screen and (max-width:785px) {
+    .footer-lower{
+       margin-top: 3rem;
+    }    
+}
+.footer-lower h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:785px) {
+    .footer-lower h2{       
+       width: 93vw;
+    }    
+}
+.footer-para{
+    line-height: 2;
+    margin-top: 2rem;
+}
+@media only screen and (max-width:785px) {
+    .footer-para{       
+       width: 93vw;
+    }    
+}
+.footer-copy-right{
+    padding:  2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.footer-copy-right a{
+    font-weight: 700;    
+    color: white;
 }
