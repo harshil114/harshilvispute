@@ -353,6 +353,34 @@ html{
 .button-shadow2{
     box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
+.blog-container{
+    margin-top: 1rem;
+}
+.blog-heading-text{
+    font-size: 2.5rem;
+}
+.blog-details-container{
+    display: flex;
+    flex-direction: column;  
+    background-color: var(--light-white);
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+.blog-details-container-content{
+    margin-bottom: 2rem;
+}
+.blog-para-container{
+    margin-bottom: 2rem;
+}
+.blog-para{
+    color: var(--aboutme-details-para);
+    font-size: 1.2rem;
+    max-width: 60vw;
+}
+.blog-btn{
+    margin-left: 0;
+}
 #footer{
     background-color: var(--black);
     color: white;    
