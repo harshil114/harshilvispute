@@ -359,6 +359,18 @@ html{
 .blog-heading-text{
     font-size: 2.5rem;
 }
+.blog-main-details{
+    font-size: 1.4rem;
+    color: var(--aboutme-details-para);
+}
+@media only screen and (max-width:660px) {
+    .blog-main-details{
+        font-size: 1.2rem;
+    }   
+    .blog-main-details-container{
+        max-width: 100vw;
+    }
+}
 .blog-details-container{
     display: flex;
     flex-direction: column;  
@@ -377,6 +389,12 @@ html{
     color: var(--aboutme-details-para);
     font-size: 1.2rem;
     max-width: 60vw;
+}
+@media only screen and (max-width:660px) {
+    .blog-para{
+        max-width: 80vw;
+    }
+    
 }
 .blog-btn{
     margin-left: 0;
