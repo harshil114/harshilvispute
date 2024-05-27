@@ -9,6 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
         rel="stylesheet" />
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">  
+    .code-img-container{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;            
+    }
+    .code-img{
+        width: 40vw;
+    }
+    .img2{
+        width: 50vw;
+    }
+</style>
 
 </head>
 
@@ -89,30 +101,10 @@
                     <p>
                         Let's understand by an example... So here is a demo of GSE in JavaScript engine.
                     </p>
-                    <figure>
-                        <table>
-                            <tr>
-                                <th>Memory Component</th>
-                                <th>Code Component</th>
-                            </tr>
-                            <tr>
-                                <td>Variables & function</td>
-                                <td>Code executed one line at a time</td>
-                            </tr>
-                            <tr>
-                                <td>Store as a key value pair</td>
-                                <td>Single Thread</td>
-                            </tr>
-                            <tr>
-                                <td>Key : Value</td>
-                            </tr>
-                            <tr>
-                                <td>a : 10,
-                                    function (){...}
-                                </td>
-                            </tr>
-                        </table>
-                    </figure>
+
+                    <div class="code-img-container">                
+                        <img src="/assets/blog-assets/how_js_works_main.png" alt="phase2-fun-2" class="code-img">                   
+                    </div>
 
                     <p>
                         JavaScript is a Synchronous single threaded language which means it executes one command or code
