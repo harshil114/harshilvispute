@@ -18,6 +18,9 @@
         .code-img{
             width: 40vw;
         }
+        .img2{
+            width: 50vw;
+        }
     </style>
 </head>
 
@@ -87,38 +90,9 @@
                <h3><u>Phase 1 :</u></h3>
                <p>In this pahse first JavaScript will allocate memory to the Functions and Variables in the Global Context.</p>
 
-               <figure>
-                    <table>
-                        <tr>
-                            <th>Memory Execution</th>
-                            <th>Code Execution</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                n : undefined
-                            </td>
-                            <td>Empty</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                square : {...}(whole function code lies here)
-                            </td>
-                            <td>Empty</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                square2 : undefined
-                            </td>
-                            <td>Empty</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                square3 : undefined
-                            </td>
-                            <td>Empty</td>
-                        </tr>
-                    </table>              
-               </figure>
+               <div class="code-img-container">
+                <img src="/assets/blog-assets/phase1.png" alt="phase1" class="code-img">                   
+            </div>
             <p>
                 Here, n will store as undefined untill the code doesn't executes and in the space of function it will store whole function which means full code of function get stores here. For square2 and square3 it also stores undefined because they are variables.
             </p>
@@ -132,20 +106,9 @@
                 In this phase JavaScript go through the code again line by line and executes the code. This is the part where all the functions and calculation are done. By executing code JavaScript will find that n = 2 then it will place that value 2 in the place of undefined in the Global execution.
             </p>
 
-            <figure>
-                <table>
-                    <tr>
-                        <th>Memory Execution</th>
-                        <th>Code Execution</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            n : 2
-                        </td>
-                        <td>How the JS find that n=2 it will pass the value form here to memory execution.</td>                        
-                    </tr>          
-                </table>              
-           </figure>
+            <div class="code-img-container">
+                <img src="/assets/blog-assets/phase2-main.png" alt="phase2-main" class="code-img img2">                   
+            </div>
 
            <p>
                 After this there is nothing to do with line number 2 to 5 because it contains function which is already declared in phase 1.
