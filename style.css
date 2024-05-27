@@ -425,8 +425,11 @@ html{
     max-width: 70vw;
     display: flex;
     flex-direction: column;    
-    line-height: 1.9;
-    font-size: 1.4rem;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+.details p{
+    margin-bottom: 1.4rem;
 }
 @media only screen and (max-width:600px) {    
     .details{
