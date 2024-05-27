@@ -79,7 +79,7 @@
                 <p>Example code :</p>
 
                 <div class="code-img-container">
-                    <img src="/assets/ex_code.png" alt="example-code" class="code-img">                   
+                    <img src="/assets/blog-assets/ex_code.png" alt="example-code" class="code-img">                   
                 </div>
                 <p>
                     When this code will executes it's GEC is created that all we know now. This Execution Context created in the 2 phases: &nbsp; 1.&nbsp;  Memory Creation Phase &nbsp; and &nbsp;  2.&nbsp;  Code Execution Phase               
@@ -154,27 +154,70 @@
                 From here JavaScript moves on line number 6. This line invokes the function. Function invocation is just like a mini program and when this mini program invokes a new Execution context get create in the Code Execution. This Execution Context contains same 2 components which is memory and code.
             </p>
             <div class="code-img-container">
-                <img src="/assets/phase2.png" alt="example-code" class="code-img">                   
+                <img src="/assets/blog-assets/phase2.png" alt="example-code" class="code-img">                   
             </div>
+
+            <h5><u>Phase 1 :</u> </h5>
+
             <p>
+                This is the phase 1 of the functions's Execution Context.                 
                 In the above image it shows the execution of function. As I told that when function invokes a new Execution Context gets create so here it is this is how a new context is created in the code and now same method will done that first assign value to the variables and functions.
             </p>
             <p>
                 Untill the code doesn't executes values of the variables will be store as  an undefined.
             </p>
             
+            <h5><u>Phase 2 :</u> </h5>
 
+            <p>
+                Phase 2 is the code execution of the function. When the function invokes the value of argument which is 'n' in this code will passed with the n=2 to the parameter of the function which is 'num'.
+            </p>
 
+           
+            <div class="code-img-container">
+                <img src="/assets/blog-assets/ex_code.png" alt="example-code">
+                <img src="/assets/blog-assets/phase2-fun.png" alt="phase2-fun" class="code-img">                   
+            </div>
 
+            <p>
+                In the above image you can see that how the function invokes from line 6 it creates new Execution Context for function in the Code Component.
+            </p>
+            <p>
+                Now here at line 3, calculation will start and it will put num * num (2*2) inside the variable ans.
+            </p>
+            <p>
+                At the line 4, return is written. Return is a keyword which returns the value where function invoked. This will return 4 as a value to the memory section. See below image for the same.
+            </p>
+
+            <div class="code-img-container">                
+                <img src="/assets/blog-assets/phase2-fun-2.png" alt="phase2-fun-2" class="code-img">                   
+            </div>
+
+            <p>
+                After executing function the whole Execution Context will be deleted from the Code Component and the same process will be repeat for the line 7.
+            </p>
+            <p>
+                When the JavaScript code get done executing whole Global Execution Context will be deleted.
+            </p>
+            <p>
+                Here new question aarrives that how JavaScript manage this much execution at a time? Isn't it is too difficult to handle? So, an answer is no. JavaScript manage this all very nicely in the Call Stack. A new question what is Call Stack?
+            </p>
+
+            <h2><u>Call Stack</u></h2>
+
+            <p>
+                This all Global Execution Context manage by a Call Stack. Call Stack is one type of stack which's bottom has Global Execution Context.
+            </p>
+
+            <div class="code-img-container">                
+                <img src="/assets/blog-assets/call-stack.png" alt="call-stack" class="code-img">                   
+            </div>
+
+            <p>
+                When function invokes that pushed inside the stack and how the value get return it moves out form the stack.
+            </p>
             </div>
         </article>
-
     </section>
-
-
-    
-
-
 </body>
-
 </html>
