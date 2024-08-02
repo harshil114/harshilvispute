@@ -146,6 +146,12 @@ html{
     border-radius: 5px;
     border: none;
 }
+.home-button:hover{
+    background-color: #7c46f3;
+}
+.home-button:active{
+    background-color: var(--button-bg-color);
+}
 .home-button-link{
     color: white;
     text-decoration: none;
